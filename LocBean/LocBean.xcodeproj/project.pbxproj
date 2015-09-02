@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11BB4FC71B96C83E007974B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FC61B96C83E007974B0 /* AppDelegate.swift */; };
+		11BB4FC91B96C83E007974B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FC81B96C83E007974B0 /* ViewController.swift */; };
+		11BB4FCC1B96C83E007974B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCA1B96C83E007974B0 /* Main.storyboard */; };
+		11BB4FCE1B96C83E007974B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCD1B96C83E007974B0 /* Images.xcassets */; };
+		11BB4FD11B96C83E007974B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */; };
+		11BB4FDD1B96C83E007974B0 /* LocBeanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11BB4FD71B96C83E007974B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BB4FB91B96C83E007974B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11BB4FC01B96C83E007974B0;
+			remoteInfo = LocBean;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11BB4FC11B96C83E007974B0 /* LocBean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocBean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BB4FC51B96C83E007974B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BB4FC61B96C83E007974B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11BB4FC81B96C83E007974B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11BB4FCB1B96C83E007974B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11BB4FCD1B96C83E007974B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		11BB4FD01B96C83E007974B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		11BB4FD61B96C83E007974B0 /* LocBeanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocBeanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BB4FDB1B96C83E007974B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocBeanTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11BB4FBE1B96C83E007974B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BB4FD31B96C83E007974B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11BB4FB81B96C83E007974B0 = {
+			isa = PBXGroup;
+			children = (
+				11BB4FC31B96C83E007974B0 /* LocBean */,
+				11BB4FD91B96C83E007974B0 /* LocBeanTests */,
+				11BB4FC21B96C83E007974B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11BB4FC21B96C83E007974B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11BB4FC11B96C83E007974B0 /* LocBean.app */,
+				11BB4FD61B96C83E007974B0 /* LocBeanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11BB4FC31B96C83E007974B0 /* LocBean */ = {
+			isa = PBXGroup;
+			children = (
+				11BB4FC61B96C83E007974B0 /* AppDelegate.swift */,
+				11BB4FC81B96C83E007974B0 /* ViewController.swift */,
+				11BB4FCA1B96C83E007974B0 /* Main.storyboard */,
+				11BB4FCD1B96C83E007974B0 /* Images.xcassets */,
+				11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */,
+				11BB4FC41B96C83E007974B0 /* Supporting Files */,
+			);
+			path = LocBean;
+			sourceTree = "<group>";
+		};
+		11BB4FC41B96C83E007974B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11BB4FC51B96C83E007974B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11BB4FD91B96C83E007974B0 /* LocBeanTests */ = {
+			isa = PBXGroup;
+			children = (
+				11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */,
+				11BB4FDA1B96C83E007974B0 /* Supporting Files */,
+			);
+			path = LocBeanTests;
+			sourceTree = "<group>";
+		};
+		11BB4FDA1B96C83E007974B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11BB4FDB1B96C83E007974B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11BB4FC01B96C83E007974B0 /* LocBean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BB4FE01B96C83E007974B0 /* Build configuration list for PBXNativeTarget "LocBean" */;
+			buildPhases = (
+				11BB4FBD1B96C83E007974B0 /* Sources */,
+				11BB4FBE1B96C83E007974B0 /* Frameworks */,
+				11BB4FBF1B96C83E007974B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocBean;
+			productName = LocBean;
+			productReference = 11BB4FC11B96C83E007974B0 /* LocBean.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11BB4FD51B96C83E007974B0 /* LocBeanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BB4FE31B96C83E007974B0 /* Build configuration list for PBXNativeTarget "LocBeanTests" */;
+			buildPhases = (
+				11BB4FD21B96C83E007974B0 /* Sources */,
+				11BB4FD31B96C83E007974B0 /* Frameworks */,
+				11BB4FD41B96C83E007974B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11BB4FD81B96C83E007974B0 /* PBXTargetDependency */,
+			);
+			name = LocBeanTests;
+			productName = LocBeanTests;
+			productReference = 11BB4FD61B96C83E007974B0 /* LocBeanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11BB4FB91B96C83E007974B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Enkhjargal Gansukh";
+				TargetAttributes = {
+					11BB4FC01B96C83E007974B0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					11BB4FD51B96C83E007974B0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 11BB4FC01B96C83E007974B0;
+					};
+				};
+			};
+			buildConfigurationList = 11BB4FBC1B96C83E007974B0 /* Build configuration list for PBXProject "LocBean" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11BB4FB81B96C83E007974B0;
+			productRefGroup = 11BB4FC21B96C83E007974B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11BB4FC01B96C83E007974B0 /* LocBean */,
+				11BB4FD51B96C83E007974B0 /* LocBeanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11BB4FBF1B96C83E007974B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BB4FCC1B96C83E007974B0 /* Main.storyboard in Resources */,
+				11BB4FD11B96C83E007974B0 /* LaunchScreen.xib in Resources */,
+				11BB4FCE1B96C83E007974B0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BB4FD41B96C83E007974B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11BB4FBD1B96C83E007974B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BB4FC91B96C83E007974B0 /* ViewController.swift in Sources */,
+				11BB4FC71B96C83E007974B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BB4FD21B96C83E007974B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BB4FDD1B96C83E007974B0 /* LocBeanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11BB4FD81B96C83E007974B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11BB4FC01B96C83E007974B0 /* LocBean */;
+			targetProxy = 11BB4FD71B96C83E007974B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11BB4FCA1B96C83E007974B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BB4FCB1B96C83E007974B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BB4FD01B96C83E007974B0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11BB4FDE1B96C83E007974B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11BB4FDF1B96C83E007974B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11BB4FE11B96C83E007974B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LocBean/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11BB4FE21B96C83E007974B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LocBean/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		11BB4FE41B96C83E007974B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LocBeanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocBean.app/LocBean";
+			};
+			name = Debug;
+		};
+		11BB4FE51B96C83E007974B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LocBeanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocBean.app/LocBean";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11BB4FBC1B96C83E007974B0 /* Build configuration list for PBXProject "LocBean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BB4FDE1B96C83E007974B0 /* Debug */,
+				11BB4FDF1B96C83E007974B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BB4FE01B96C83E007974B0 /* Build configuration list for PBXNativeTarget "LocBean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BB4FE11B96C83E007974B0 /* Debug */,
+				11BB4FE21B96C83E007974B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11BB4FE31B96C83E007974B0 /* Build configuration list for PBXNativeTarget "LocBeanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BB4FE41B96C83E007974B0 /* Debug */,
+				11BB4FE51B96C83E007974B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11BB4FB91B96C83E007974B0 /* Project object */;
+}
