@@ -1,4 +1,3 @@
 # LocBean
 
-Loc = Location
-Bean = Beacon
+(Loc: Location +  Bean: Beacon) = LocBean
