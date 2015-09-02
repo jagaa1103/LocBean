@@ -13,6 +13,7 @@
 		11BB4FCE1B96C83E007974B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCD1B96C83E007974B0 /* Images.xcassets */; };
 		11BB4FD11B96C83E007974B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */; };
 		11BB4FDD1B96C83E007974B0 /* LocBeanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */; };
+		11BB4FE71B9737CF007974B0 /* BeaconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FE61B9737CF007974B0 /* BeaconService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		11BB4FD61B96C83E007974B0 /* LocBeanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocBeanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BB4FDB1B96C83E007974B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocBeanTests.swift; sourceTree = "<group>"; };
+		11BB4FE61B9737CF007974B0 /* BeaconService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				11BB4FCD1B96C83E007974B0 /* Images.xcassets */,
 				11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */,
 				11BB4FC41B96C83E007974B0 /* Supporting Files */,
+				11BB4FE61B9737CF007974B0 /* BeaconService.swift */,
 			);
 			path = LocBean;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BB4FC91B96C83E007974B0 /* ViewController.swift in Sources */,
+				11BB4FE71B9737CF007974B0 /* BeaconService.swift in Sources */,
 				11BB4FC71B96C83E007974B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				11BB4FE21B96C83E007974B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11BB4FE31B96C83E007974B0 /* Build configuration list for PBXNativeTarget "LocBeanTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				11BB4FE51B96C83E007974B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
