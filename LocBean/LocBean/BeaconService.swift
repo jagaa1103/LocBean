@@ -81,6 +81,13 @@ class BeaconService: NSObject, CLLocationManagerDelegate {
     
     func sendNotification(){
         println("Sending Notif ......................")
+        var localNotification = UILocalNotification()
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 1)
+        localNotification.alertBody = "new Blog Posted at iOScreator.com"
+        localNotification.timeZone = NSTimeZone.defaultTimeZone()
+        localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
     
 }
