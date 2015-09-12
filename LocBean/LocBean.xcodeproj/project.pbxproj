@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112E6EFA1BA3FF83006B689C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112E6EF91BA3FF83006B689C /* CoreLocation.framework */; };
 		11BB4FC71B96C83E007974B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FC61B96C83E007974B0 /* AppDelegate.swift */; };
 		11BB4FC91B96C83E007974B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FC81B96C83E007974B0 /* ViewController.swift */; };
 		11BB4FCC1B96C83E007974B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCA1B96C83E007974B0 /* Main.storyboard */; };
 		11BB4FCE1B96C83E007974B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCD1B96C83E007974B0 /* Images.xcassets */; };
 		11BB4FD11B96C83E007974B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */; };
 		11BB4FDD1B96C83E007974B0 /* LocBeanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */; };
-		11BB4FE71B9737CF007974B0 /* BeaconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FE61B9737CF007974B0 /* BeaconService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112E6EF91BA3FF83006B689C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		112E6EFB1BA409B7006B689C /* tos_beep.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tos_beep.caf; sourceTree = "<group>"; };
 		11BB4FC11B96C83E007974B0 /* LocBean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocBean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BB4FC51B96C83E007974B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BB4FC61B96C83E007974B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +39,6 @@
 		11BB4FD61B96C83E007974B0 /* LocBeanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocBeanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BB4FDB1B96C83E007974B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocBeanTests.swift; sourceTree = "<group>"; };
-		11BB4FE61B9737CF007974B0 /* BeaconService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112E6EFA1BA3FF83006B689C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +63,7 @@
 		11BB4FB81B96C83E007974B0 = {
 			isa = PBXGroup;
 			children = (
+				112E6EF91BA3FF83006B689C /* CoreLocation.framework */,
 				11BB4FC31B96C83E007974B0 /* LocBean */,
 				11BB4FD91B96C83E007974B0 /* LocBeanTests */,
 				11BB4FC21B96C83E007974B0 /* Products */,
@@ -85,7 +88,6 @@
 				11BB4FCD1B96C83E007974B0 /* Images.xcassets */,
 				11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */,
 				11BB4FC41B96C83E007974B0 /* Supporting Files */,
-				11BB4FE61B9737CF007974B0 /* BeaconService.swift */,
 			);
 			path = LocBean;
 			sourceTree = "<group>";
@@ -93,6 +95,7 @@
 		11BB4FC41B96C83E007974B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				112E6EFB1BA409B7006B689C /* tos_beep.caf */,
 				11BB4FC51B96C83E007974B0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -221,7 +224,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BB4FC91B96C83E007974B0 /* ViewController.swift in Sources */,
-				11BB4FE71B9737CF007974B0 /* BeaconService.swift in Sources */,
 				11BB4FC71B96C83E007974B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
