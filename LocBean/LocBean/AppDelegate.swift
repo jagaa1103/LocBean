@@ -17,6 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
+        
+//        var localNotification = UILocalNotification()
+//        localNotification.fireDate = NSDate(timeIntervalSinceNow: 2)
+//        localNotification.timeZone = NSTimeZone.defaultTimeZone()
+//        localNotification.applicationIconBadgeNumber = -1
+//        application.scheduleLocalNotification(localNotification)
+        
+        application.applicationIconBadgeNumber = -1
+        if(application.respondsToSelector("registerUserNotificationSettings:")) {
+            application.registerUserNotificationSettings(
+                UIUserNotificationSettings(
+                    forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound,
+                    categories: nil
+                )
+            )
+        }
+        BeaconService.sharedInstance.startService();
         return true
     }
 

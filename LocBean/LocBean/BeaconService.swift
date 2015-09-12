@@ -26,8 +26,7 @@ class BeaconService: NSObject, CLLocationManagerDelegate {
         return Static.instance!
     }
     
-    func startService(view: ViewController) {
-        self.currentView = view
+    func startService() {
         locationManager.delegate = self
         if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedWhenInUse) {
             locationManager.requestWhenInUseAuthorization()
@@ -35,7 +34,7 @@ class BeaconService: NSObject, CLLocationManagerDelegate {
         locationManager.startRangingBeaconsInRegion(region)
         locationManager.startMonitoringForRegion(region)
         locationManager.startMonitoringVisits()
-        
+        locationManager.startUpdatingLocation()
     }
     
     func stopService(){
@@ -55,19 +54,22 @@ class BeaconService: NSObject, CLLocationManagerDelegate {
     }
     func locationManager(manager: CLLocationManager!, didStartMonitoringForRegion region: CLRegion!) {
         println("You are in beacon region")
-        sendNotification()
+        sendNotification("You are in beacon region")
     }
     
     func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
         println("You entered in Beacon Area")
-        sendNotification()
+        sendNotification("You entered in Beacon Area")
     }
     
     func locationManager(manager: CLLocationManager!, didExitRegion region: CLRegion!) {
         println("You are exited")
+        sendNotification("You are exited!!!")
     }
     
     func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
+        println("Found: \(beacons.count) beacons")
+//        println(beacons)
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.Unknown }
         if (knownBeacons.count > 0) {
             let closestBeacon = knownBeacons[0] as! CLBeacon
@@ -79,12 +81,10 @@ class BeaconService: NSObject, CLLocationManagerDelegate {
         }
     }
     
-    func sendNotification(){
+    func sendNotification(msg: String){
         println("Sending Notif ......................")
         var localNotification = UILocalNotification()
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 1)
-        localNotification.alertBody = "new Blog Posted at iOScreator.com"
-        localNotification.timeZone = NSTimeZone.defaultTimeZone()
+        localNotification.alertBody = msg
         localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
         
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)

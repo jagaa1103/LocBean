@@ -30,7 +30,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var labelRSSI: UILabel!
     @IBOutlet weak var labelUUID: UILabel!
     @IBAction func startClicked(sender: AnyObject) {
-        BeaconService.sharedInstance.startService(self)
+        BeaconService.sharedInstance.startService()
     }
     @IBAction func stopClicked(sender: AnyObject) {
         BeaconService.sharedInstance.stopService()
