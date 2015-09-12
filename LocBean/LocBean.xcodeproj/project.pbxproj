@@ -12,7 +12,6 @@
 		11BB4FC91B96C83E007974B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FC81B96C83E007974B0 /* ViewController.swift */; };
 		11BB4FCC1B96C83E007974B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCA1B96C83E007974B0 /* Main.storyboard */; };
 		11BB4FCE1B96C83E007974B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCD1B96C83E007974B0 /* Images.xcassets */; };
-		11BB4FD11B96C83E007974B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */; };
 		11BB4FDD1B96C83E007974B0 /* LocBeanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		11BB4FC81B96C83E007974B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11BB4FCB1B96C83E007974B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11BB4FCD1B96C83E007974B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		11BB4FD01B96C83E007974B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		11BB4FD61B96C83E007974B0 /* LocBeanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocBeanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BB4FDB1B96C83E007974B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BB4FDC1B96C83E007974B0 /* LocBeanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocBeanTests.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				11BB4FC81B96C83E007974B0 /* ViewController.swift */,
 				11BB4FCA1B96C83E007974B0 /* Main.storyboard */,
 				11BB4FCD1B96C83E007974B0 /* Images.xcassets */,
-				11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */,
 				11BB4FC41B96C83E007974B0 /* Supporting Files */,
 			);
 			path = LocBean;
@@ -204,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BB4FCC1B96C83E007974B0 /* Main.storyboard in Resources */,
-				11BB4FD11B96C83E007974B0 /* LaunchScreen.xib in Resources */,
 				11BB4FCE1B96C83E007974B0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,14 +249,6 @@
 				11BB4FCB1B96C83E007974B0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		11BB4FCF1B96C83E007974B0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11BB4FD01B96C83E007974B0 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LocBean/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LocBean/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

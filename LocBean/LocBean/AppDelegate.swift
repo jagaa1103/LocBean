@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var lastProximity: CLProximity?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+                
         let uuidString = "01122334-4556-6778-899a-abbccddeeff0"
         let beaconIdentifier = "ibeacon"
         let beaconUUID:NSUUID = NSUUID(UUIDString: uuidString)!
