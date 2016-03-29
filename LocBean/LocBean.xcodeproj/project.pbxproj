@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		112E6EFA1BA3FF83006B689C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112E6EF91BA3FF83006B689C /* CoreLocation.framework */; };
+		112E6EFD1BA41CE7006B689C /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112E6EFC1BA41CE7006B689C /* Launch Screen.xib */; };
+		117279CE1CAA476000E6852B /* beaconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117279CD1CAA476000E6852B /* beaconService.swift */; };
 		11BB4FC71B96C83E007974B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FC61B96C83E007974B0 /* AppDelegate.swift */; };
 		11BB4FC91B96C83E007974B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BB4FC81B96C83E007974B0 /* ViewController.swift */; };
 		11BB4FCC1B96C83E007974B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FCA1B96C83E007974B0 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		112E6EF91BA3FF83006B689C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		112E6EFB1BA409B7006B689C /* tos_beep.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tos_beep.caf; sourceTree = "<group>"; };
+		112E6EFC1BA41CE7006B689C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		117279CD1CAA476000E6852B /* beaconService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beaconService.swift; sourceTree = "<group>"; };
 		11BB4FC11B96C83E007974B0 /* LocBean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocBean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BB4FC51B96C83E007974B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BB4FC61B96C83E007974B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,9 +86,11 @@
 			children = (
 				11BB4FC61B96C83E007974B0 /* AppDelegate.swift */,
 				11BB4FC81B96C83E007974B0 /* ViewController.swift */,
+				117279CD1CAA476000E6852B /* beaconService.swift */,
 				11BB4FCA1B96C83E007974B0 /* Main.storyboard */,
 				11BB4FCD1B96C83E007974B0 /* Images.xcassets */,
 				11BB4FC41B96C83E007974B0 /* Supporting Files */,
+				112E6EFC1BA41CE7006B689C /* Launch Screen.xib */,
 			);
 			path = LocBean;
 			sourceTree = "<group>";
@@ -159,7 +165,8 @@
 		11BB4FB91B96C83E007974B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Enkhjargal Gansukh";
 				TargetAttributes = {
 					11BB4FC01B96C83E007974B0 = {
@@ -202,6 +209,7 @@
 			files = (
 				11BB4FCC1B96C83E007974B0 /* Main.storyboard in Resources */,
 				11BB4FCE1B96C83E007974B0 /* Images.xcassets in Resources */,
+				112E6EFD1BA41CE7006B689C /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +229,7 @@
 			files = (
 				11BB4FC91B96C83E007974B0 /* ViewController.swift in Sources */,
 				11BB4FC71B96C83E007974B0 /* AppDelegate.swift in Sources */,
+				117279CE1CAA476000E6852B /* beaconService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +284,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,6 +352,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LocBean/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smartmongol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,6 +364,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LocBean/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smartmongol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -371,6 +383,7 @@
 				);
 				INFOPLIST_FILE = LocBeanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smartmongol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocBean.app/LocBean";
 			};
@@ -386,6 +399,7 @@
 				);
 				INFOPLIST_FILE = LocBeanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smartmongol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocBean.app/LocBean";
 			};
